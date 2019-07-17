@@ -1,0 +1,24 @@
+li {
+    display: block;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+        background-color: black !important;
+    }
+    &:hover>a {
+        opacity: 1;
+    }
+    i {
+        font-size: 0.8rem;
+        margin-left: 11px;
+    }
+    a {
+        opacity: 0.8;
+        font-weight: 100;
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+}
+.active-menu {
+    background-color: #df0018 !important;
+}

@@ -1,0 +1,14 @@
+<header class="col-12 bg-info">Dây là header</header>
+
+<main class="row">
+	<side-bar [ngClass]="['col-3']"></side-bar>		
+	<div class="col-9">
+		<div class="bg-light p-5">
+			<router-outlet></router-outlet>
+		</div>
+		<!-- <section class="bg-danger" >đây là content</section> -->
+		<footer class="bg-success">đay là footer</footer>
+	</div>
+	
+</main>
+

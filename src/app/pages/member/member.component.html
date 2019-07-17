@@ -1,0 +1,23 @@
+<path></path>
+<div class="search-member d-flex">
+    <button class="btn btn-info fas fa-search">
+
+    </button>
+    <input type="text" class="form-control"  [(ngModel)]="searchUser" (ngModelChange)="changeInputSearchUser($event)" placeholder="Search user by name...">
+    <button class="btn btn-info fas fa-user-plus" data-toggle="modal" data-target="#exampleModalCenter"></button>
+    <button class="btn btn-info fas fa-th" (click)="changeShowGrid()"></button>
+    <button class="btn btn-info fas fa-list" (click)="changeShowList()"></button>
+</div>
+<div class="content-member ">
+    <one-member [valueInput]="searchUser" [styleShow]="statusShowList" [ngClass]="{'d-flex': true,'flex-wrap': true,'justify-content-between': true}" [ngStyle]="{'width': '100%'}"></one-member>
+</div>
+<div class="pagination bg-white my-3 d-flex justify-content-center align-items-center">
+    <span  >Previous</span>
+    <ul class="d-flex m-0">
+        <li>1</li>
+        <li>2</li>
+    </ul>
+    <span >Nexts</span>
+</div>
+<!-- modal add user -->
+<add-user></add-user>

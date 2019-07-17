@@ -1,0 +1,48 @@
+    <info-common [ngClass]="['d-flex' ,'justify-content-between']"  ></info-common>
+    <chart-common></chart-common>
+    <div class="row justify-content-between">
+        <div class="col-5 bg-white rounded ">
+            <div class="title d-flex align-items-center justify-content-between">
+                <h4 class="py-2 text-secondary">Visitors</h4>
+                <div class="option-title">
+                    <i class="fas fa-times" (click)="closeChart($event)"></i>
+                </div>    
+            </div>
+            <chart-visitor></chart-visitor>
+        </div>
+        <div class="col-5 bg-white rounded ">
+            <div class="title d-flex align-items-center justify-content-between">
+                <h4 class="py-2 text-secondary">Real time cost</h4>
+                <div class="option-title">
+                    <i class="fas fa-times" (click)="closeChart($event)"></i>
+                </div>    
+            </div>
+            <realtime-cost></realtime-cost>
+        </div>
+    </div>
+    <div class="row justify-content-between mt-4">
+        <div class="col-5 bg-white rounded ">
+            <div class="title d-flex align-items-center justify-content-between">
+                <h4 class="py-2 text-secondary">Disk Space</h4>
+                <div class="option-title">
+                    <i class="fas fa-times" (click)="closeChart($event)"></i>
+                </div>    
+            </div>
+            <disk-space></disk-space>
+        </div>
+        <div class="col-6 bg-white rounded ">
+            <div class="title d-flex align-items-center justify-content-between">
+                <h4 class="py-2 text-secondary">Todo List</h4>
+                <div class="option-title">
+                    <i class="fas fa-times" (click)="closeChart($event)"></i>
+                </div>    
+            </div>
+            <div  class="row p-3" >
+                <input class="form-control"  [ngStyle]="{'width': '90%'}" [(ngModel)]="taskItem" placeholder="Task to do ..." />
+                <button class="btn btn-info " [ngStyle]="{'height': 'calc(1.5em + .75rem + 2px)','width': '10%'}" (click)="addTask()" ></button>
+            </div>
+            <div>
+                <todo-list></todo-list>
+            </div>
+        </div>
+    </div>

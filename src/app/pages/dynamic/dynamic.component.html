@@ -1,0 +1,36 @@
+<path></path>
+<div class="dynamic col-6 bg-white offset-3 rounded">
+    <form>
+        <label>Menu title</label>
+        <input type='text' class="form-control" #title />
+        <label>Icon</label>
+        <select class="form-control" #icon>
+            <option value="0">-- Select Icon --</option>
+            <option value='1'>
+                <i class="fas fa-bars"></i>
+                <span>bars</span>
+            </option>
+            <option value='2'>
+                <i class="fas fa-circle"></i>
+                <span>circle</span>
+            </option>
+            <option value='3'>
+                <i class="fas fa-heart"></i>
+                <span>heart</span>
+            </option>
+        </select>
+        <label>Router link</label>
+        <input type='text' class="form-control" #link />
+        
+        <label>Href</label>
+        <input type='text' class="form-control" />
+        <label>Parent menu</label>
+        <select class="form-control"  #menuParent>
+            <option value="1">
+                <i></i>
+                <span>Dashboard</span>
+            </option>
+        </select>
+        <button class="btn btn-success" (click)="createItemMenu($event,title.value,icon.value,link.value,menuParent.value)"> Add new menu</button>
+    </form>
+</div>

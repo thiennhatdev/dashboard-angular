@@ -1,0 +1,19 @@
+.task-item {
+    cursor: pointer;
+    &>i {
+        display: none;
+        
+    }
+    &:hover>i {
+        display: inline-block;
+    }
+    label {
+        font-size: 0.9em;
+    }
+    &>div {
+        i {
+            font-size: 0.8rem;
+            color: green;
+        }
+    }
+}

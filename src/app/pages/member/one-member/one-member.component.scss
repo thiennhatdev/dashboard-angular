@@ -1,0 +1,69 @@
+.card-member {
+    width: 32%;
+    border-radius: 5px;
+    box-shadow: 1px 1px  6px silver;
+    .info-user {
+        p {
+            margin: 0 !important;
+        }
+        span {
+            margin-left: 8px;
+        }
+        i,
+        span  {
+            display: inline-block;
+            font-size: 0.9em;
+        }
+        i {
+            text-align: right;
+            width: 30%;
+        }
+        
+    }
+    .social {
+        i {
+            width: 23px;
+            border: 2px solid silver;
+            border-radius: 3px;
+            height: 23px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: silver;
+            cursor: pointer;
+        }
+    }
+    figure {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 999px;
+        img {
+            height: 100%;
+        }
+    }
+    .card--title-right {
+        i {
+            cursor: pointer;
+            color: silver;
+        }
+    }
+    h4 {
+        font-size: 0.9rem;
+    }
+}
+table {
+    td {
+        font-size: 0.9em;
+        padding: 0 10px;
+    }
+    figure {
+        width :70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            width: 100% !important;
+        }
+    }
+}

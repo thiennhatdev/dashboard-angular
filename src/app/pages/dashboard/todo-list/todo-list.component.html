@@ -1,0 +1,11 @@
+<div class="task-item d-flex justify-content-between" (click)="changeStatus(task.name)"  *ngFor="let task of arrTasks; let i = index">
+    <div>
+        <input type='radio' *ngIf="task.status; else showLabel"  />
+        <ng-template #showLabel>
+            <i class="fas fa-check"></i>
+        </ng-template>
+        
+        <label class="ml-3"> {{task.name.length > 55 ? ((task.name | slice : 0 : 55) + '...') : task.name}}</label>
+    </div>
+    <i class="fas fa-trash-alt text-danger" (click)="removeTask(task.name)"></i>
+</div>

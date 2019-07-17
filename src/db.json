@@ -1,0 +1,142 @@
+{
+    "menu" : [
+        {
+            "icon" : "fas fa-tachometer-alt",
+            "name" : "Dashboard",
+            "link" : ""
+        },
+        {
+            "icon" : "fas fa-users",
+            "name" : "Membership",
+            "link" : "member"
+        },
+        {
+            "icon" : "fas fa-laptop",
+            "name" : "UI Features",
+            "subItem" : [
+                {
+                    "icon" : "class1",
+                    "name" : "menu 3 1"
+                }  
+            ],
+            "link" : "feature"
+        },
+        {
+            "icon" : "fas fa-list",
+            "name" : "Dynamic Menu",
+            "link" : "dynamic"
+        },
+        {
+            "icon" : "fas fa-envelope",
+            "name" : "Mailbox",
+            "link" : "mailbox"
+        },
+        {
+            "icon" : "fas fa-pen-square",
+            "name" : "Form Elements",
+            "link" : "form"
+        },
+        {
+            "icon" : "fas fa-table",
+            "name" : "Tables",
+            "link" : "table"
+        },
+        {
+            "icon" : "fas fa-wrench",
+            "name" : "Tools",
+            "link" : "tool"
+        },
+        {
+            "icon" : "fas fa-file-alt",
+            "name" : "Pages",
+            "link" : "page"
+        },
+        {
+            "icon" : "fas fa-calendar-alt",
+            "name" : "Calendar",
+            "link" : "calendar"
+        },
+        {
+            "icon" : "fas fa-globe-asia",
+            "name" : "Maps",
+            "link" : "map"
+        },
+        {
+            "icon" : "fas fa-chart-area",
+            "name" : "Charts",
+            "link" : "chart"
+        },
+        {
+            "icon" : "fas fa-folder-open",
+            "name" : "Level 1",
+            "link" : "level"
+        },
+        {
+            "icon" : "fas fa-external-link-alt",
+            "name" : "External Link",
+            "link" : "external"
+        }
+    ],
+    "infoCommonDashboard" : [
+        {
+            "number" : 81,
+            "icon" : "fas fa-shopping-cart",
+            "name" : "sales",
+            "bg" : "bg-success"
+        },
+        {
+            "number" : 47.588,
+            "icon" :    "far fa-thumbs-up",
+            "name" : "likes",
+            "bg" : "bg-info"
+        },
+        {
+            "number" : 189.730,
+            "icon" : "fas fa-download",
+            "name" : "downloads",
+            "bg" : "bg-danger"
+        },
+        {
+            "number" : 52.470,
+            "icon" : "fas fa-shopping-cart",
+            "name" : "profit",
+            "bg" : "bg-dark"
+        },
+        {
+            "number" : 75.296,
+            "icon" : "far fa-comment",
+            "name" : "messages",
+            "bg" : "bg-secondary"
+        },
+        {
+            "number" : 216.289,
+            "icon" : "fas fa-user",
+            "name" : "member",
+            "bg" : "bg-primary"
+        }
+    ],
+    "tasks" : [
+        {
+            "status" : true,
+            "name" : "Check me out" 
+        },
+        {
+            "status" : true,
+            "name" : "Curabitur dignissim nunc a tellus euismod, quis pretium ipsum convallis" 
+        },
+        {
+            "status" : true,
+            "name" : "Vivamus dapibus pulvinar ipsum, sit amet elementum sapien tincidunt non"
+        },
+        {
+            "status" : true,
+            "name" : "Praesent viverra nisl a pharetra viverra"
+        },
+        {
+            "status" : true,
+            "name" : "Lorem ipsum dolor sit amet, possit denique oportere at his, etiam corpora deseruisse te pro"
+        }
+    ]
+    
+
+}

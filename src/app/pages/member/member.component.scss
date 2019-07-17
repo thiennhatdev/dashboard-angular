@@ -1,0 +1,39 @@
+.pagination {
+    span {
+        cursor: pointer;
+        color :silver;
+    }
+    span:first-child {
+        position: relative;
+        &:before {
+            content: '\f100';
+            font-weight : 900;
+            font-family: "Font Awesome 5 Free";
+            position : absolute;
+            left: -20px;
+        }
+    }
+    span:nth-child(3) {
+        position: relative;
+        &:before {
+            content: '\f101';
+            font-weight : 900;
+            font-family: "Font Awesome 5 Free";
+            position : absolute;
+            right: -20px;
+        }
+    }
+    li {
+        color: silver;
+        list-style-type: none;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+    }
+}
+button,input {
+    border-radius: 0 !important;
+}

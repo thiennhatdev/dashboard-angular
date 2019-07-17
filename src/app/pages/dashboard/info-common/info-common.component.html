@@ -1,0 +1,7 @@
+<div class="info-chart" *ngFor="let item of arrDataChart; let i = index" [ngClass]="item.bg" class="px-3 py-2 rounded" [ngStyle]="{'width': '14%'}">
+    <span class="text-white">{{ item.number }}</span>
+    <div class="mt-3">
+        <i [ngClass]="item.icon" class="text-white mr-2" ></i>
+        <span class="text-white" [ngStyle]="{'font-size': '0.9rem'}">{{ item.name }}</span>
+    </div>
+</div>

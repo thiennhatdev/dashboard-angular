@@ -1,0 +1,98 @@
+        
+
+
+<ng-container *ngIf="styleShowMember ">
+    <div  class="card-member mt-4" *ngFor="let member of arrMemberNew" >
+        <div class="card--title d-flex justify-content-between px-3 py-2">
+                <div class="card--title-left d-flex align-items-center">
+                    <ng-container [ngSwitch]="member.active">
+                            <i *ngSwitchCase="1" class="fas fa-user mr-2 text-info"></i>
+                            <i *ngSwitchCase="2" class="fas fa-user mr-2 text-danger"></i>
+                            <i *ngSwitchDefault class="fas fa-user mr-2 text-success"></i>
+                    </ng-container>
+                    
+                    <h4 class="m-0">{{member.name}}</h4>
+                </div>
+                <div class="card--title-right">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-pen ml-2"></i>
+                    <i class="fas fa-trash-alt ml-2" ></i>
+                </div>
+            </div>
+            <div class="card-content p-3 d-flex bg-white">
+                <div class="avatar ">
+                    <figure class="d-flex justify-content-center">
+                            <img src={{member.link}} alt='avatar' />
+                    </figure>
+                    
+                    <div class="social d-flex justify-content-around">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google"></i>
+                    </div>
+                </div>
+                <div class="info-user ml-3">
+                    <p>
+                        <i>compa</i>
+                        <span>{{member.company.length > 10 ? ((member.company | slice : 0 : 10) + '...') : member.company }}</span>
+                    </p>
+                    <p>
+                        <i>positi</i>
+                        <span>{{member.position.length > 8 ? ((member.position | slice : 0 : 8) + '...') : member.position }}</span>
+                    </p>
+                    <p>
+                        <i>email</i>
+                        <span>{{member.email.length > 10 ? ((member.email | slice : 0 : 8) + '...') : member.email }}</span>
+                    </p>
+                    <p>
+                        <i>joined</i>
+                        <span>{{member.joined.length > 10 ? ((member.joined | slice : 0 : 10) + '...') : member.joined }}</span>
+                    </p>
+                    <p>
+                        <i>email</i>
+                        <span>{{member.email.length > 10 ? ((member.email | slice : 0 : 8) + '...') : member.email }}</span>
+                    </p>
+                </div>
+        </div>
+    </div>    
+</ng-container>
+<!-- ////////////////////// -->
+<div *ngIf="!styleShowMember">
+        <table  >
+        <thead>
+            <tr>
+                <td></td>
+                <td>Full name</td>
+                <td>Company</td>
+                <td>Position</td>
+                <td>Username</td>
+                <td>Email</td>
+                <td>Status</td>
+                <td>Joined</td>
+                <td>Action</td>
+                
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let member of arrMemberNew">
+                <td>
+                    <figure>
+                            <img alt='profile' src={{member.link}} [ngStyle]="{'width': '80px'}" />
+                    </figure>
+                    
+                </td>
+                <td>{{member.name}}</td>
+                <td>{{member.company}}</td>
+                <td>{{member.position}}</td>
+                <td>{{member.position}}</td>
+                <td>{{member.position}}</td>
+                <td>{{member.position}}</td>
+                <td>{{member.position}}</td>
+                <td>{{member.position}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+</div>
+
